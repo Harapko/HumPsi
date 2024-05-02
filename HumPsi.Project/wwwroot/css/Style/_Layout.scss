@@ -1,0 +1,163 @@
+.header {
+  &__contact {
+    display: grid;
+    grid-template-columns: 10% 10% 25% 55%;
+    width: 1250px;
+    margin: 0 auto;
+    &__photo {
+      grid-column-start: 1;
+      grid-column-end: 2;
+
+      &:before{
+        content: url(http://placehold.it/125x162);
+      }
+    }
+
+    &__title {
+      justify-self: end;
+      align-self: end;
+    }
+
+    &__nav-info {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      align-self: center;
+      justify-self: end;
+
+      &__button{
+        margin-right: 30px;
+      }
+    }
+  }
+
+  &__nav {
+    position: relative;
+    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #343a40;
+    max-height: 40px;
+
+
+    &__wrapper{
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      justify-content: space-around;
+      margin: 0 auto;
+      width: 1200px;
+    }
+
+    &__button {
+      justify-self: center;
+      text-decoration: none;
+      padding: 10px 0 10px 0;
+
+      &:last-child{
+        border-right: none;
+      }
+
+
+    }
+    a{
+      color: white;
+      font-size: 14.8px;
+      text-decoration: none;
+    }
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+}
+
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  &__wrapper {
+    display: grid;
+    grid-template-rows: 75% 25%;
+    color: white;
+
+  }
+
+  &__info {
+    background-color: #32323c;
+
+    &__wrapper {
+      display: grid;
+      width: 1250px;
+      margin: 0 auto;
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+
+    }
+
+    &__social-network {
+      justify-self: end;
+    }
+  }
+
+  &__privacy {
+    background-color: #19191e;
+    bottom: 10px;
+    &__wrapper {
+      width: 1250px;
+      margin: 0 auto;
+    }
+
+    &__info {
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+
+@media (max-width: 1400px) {
+  .header__contact, .footer__info__wrapper, .footer__privacy__wrapper{
+    width: 1100px;
+
+  }
+
+  .header__nav__wrapper{
+    width: 1050px;
+
+  }
+
+  .header__info__photo:before{
+    content: url(http://placehold.it/107x162)
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .header__contact, .footer__info__wrapper, .footer__privacy__wrapper{
+    width: 1000px;
+
+  }
+
+  .header__nav__wrapper{
+    width: 950px;
+
+  }
+
+  .header__info__photo:before{
+    content: url(http://placehold.it/97x162)
+  }
+}
+
+
+
+
+
+

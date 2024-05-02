@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+
+<header class="header">
+    <div class="wrapper">
+        
+        <div class="header__contact">
+            <div class="header__contact__photo">
+                <a href="">
+                    @* <img src="~/img/dnkTitle.png" alt=""> *@
+                </a>
+            </div>
+            <div class="header__contact__title">Human Phi</div>
+            <div class="header__contact__nav-info">
+                <a href="#" class="header__contact__nav-info__button">Subjects</a>
+                <a href="#" class="header__contact__nav-info__button">Question Bank</a>
+                <a href="#" class="header__contact__nav-info__button">Apps</a>
+                <a href="#" class="header__contact__nav-info__button">Contact Us</a>
+                <a href="">
+                    @* <i class="bi bi-search"></i> *@
+                </a>
+            </div>
+        </div>
+
+        <nav class="header__nav">
+            <div class="header__nav__wrapper">
+                @for (int x = 0; x < 10; x++)
+                {
+                    <div href="" class="header__nav__button">
+                        <a href="">Biochemistry</a>
+                        <div class="partial">
+                            <div class="partial__wrapper">
+                                <partial name="_navMenu"/>
+                            </div>
+                        </div>
+                    </div>
+                }
+                
+                @* <div href="" class="header__nav__button"> *@
+                @*     <a href="">Histology</a> *@
+                @*     <div class="content-partial"> *@
+                @*         <div class="partial"> *@
+                @*             <partial name="_NavMenu"/> *@
+                @*         </div> *@
+                @*     </div> *@
+                @* </div> *@
+                @* <div href="" class="header__nav__button"> *@
+                @*     <a href="">Cardiovascular</a> *@
+                @*     <div class="content-partial"> *@
+                @*         <div class="partial"> *@
+                @*             <partial name="_NavMenu"/> *@
+                @*         </div> *@
+                @*     </div> *@
+                @* *@
+                @* </div> *@
+                @* <div href="" class="header__nav__button"> *@
+                @*     <a href="">Respiratory</a> *@
+                @*     <div class="content-partial"> *@
+                @*         <div class="partial"> *@
+                @*             <partial name="_NavMenu"/> *@
+                @*         </div> *@
+                @*     </div> *@
+                @* </div> *@
+                @* <div href="" class="header__nav__button"> *@
+                @*     <a href="">Gastrointestinal</a> *@
+                @*     <div class="content-partial"> *@
+                @*         <div class="partial"> *@
+                @*             <partial name="_NavMenu"/> *@
+                @*         </div> *@
+                @*     </div> *@
+                @* </div> *@
+                @* <div href="" class="header__nav__button"> *@
+                @*     <a href="">Urinary</a> *@
+                @*     <div class="content-partial"> *@
+                @*         <div class="partial"> *@
+                @*             <partial name="_NavMenu"/> *@
+                @*         </div> *@
+                @*     </div> *@
+                @* </div> *@
+                @* <div href="" class="header__nav__button"> *@
+                @*     <a href="">Reproductive</a> *@
+                @*     <div class="content-partial"> *@
+                @*         <div class="partial"> *@
+                @*             <partial name="_NavMenu"/> *@
+                @*         </div> *@
+                @*     </div> *@
+                @* </div> *@
+                @* <div href="" class="header__nav__button"> *@
+                @*     <a href="">Neurology</a> *@
+                @*     <div class="content-partial"> *@
+                @*         <div class="partial"> *@
+                @*             <partial name="_NavMenu"/> *@
+                @*         </div> *@
+                @*     </div> *@
+                @* </div> *@
+                @* <div href="" class="header__nav__button"> *@
+                @*     <a href="">Endocrine</a> *@
+                @*     <div class="content-partial"> *@
+                @*         <div class="partial"> *@
+                @*             <partial name="_NavMenu"/> *@
+                @*         </div> *@
+                @*     </div> *@
+                @* </div> *@
+                @* <div href="" class="header__nav__button"> *@
+                @*     <a href="">Immunology/Haematology</a> *@
+                @*     <div class="content-partial"> *@
+                @*         <div class="partial"> *@
+                @*             <partial name="_NavMenu"/> *@
+                @*         </div> *@
+                @*     </div> *@
+                @* </div> *@
+
+            </div>
+        </nav>
+
+        
+    </div>
+</header>
+
+@RenderBody()
+
+<footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__info">
+            <div class="footer__info__wrapper">
+                <div class="footer__info__title">Title</div>
+                <div class="footer__info__subtitle">subtitle</div>
+                <div class="footer__info__social-network">social-network</div>
+            </div>
+        </div>
+        <div class="footer__privacy">
+            <div class="footer__privacy__wrapper">
+                <div class="footer__privacy__info">privacy</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
