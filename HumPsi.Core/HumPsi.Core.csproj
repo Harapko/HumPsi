@@ -1,15 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
-        <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>HumPsiProject</RootNamespace>
+        <Nullable>enable</Nullable>
+        <RootNamespace>HumPsi.Data.MsSql</RootNamespace>
     </PropertyGroup>
-
-    <ItemGroup>
-      <Folder Include="wwwroot\Script\" />
-    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
@@ -18,10 +14,6 @@
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\HumPsi.Core\HumPsi.Core.csproj" />
     </ItemGroup>
 
 </Project>

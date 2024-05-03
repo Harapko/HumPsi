@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("HumPsi.Project")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("HumPsi.Data.MsSql")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67d32f40089749d7aca09baeee541ebc05223252")]
-[assembly: System.Reflection.AssemblyProductAttribute("HumPsi.Project")]
-[assembly: System.Reflection.AssemblyTitleAttribute("HumPsi.Project")]
+[assembly: System.Reflection.AssemblyProductAttribute("HumPsi.Data.MsSql")]
+[assembly: System.Reflection.AssemblyTitleAttribute("HumPsi.Data.MsSql")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

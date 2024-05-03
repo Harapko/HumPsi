@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumPsi.Project", "HumPsi.Project\HumPsi.Project.csproj", "{813E86DD-AC53-40EC-B4DF-4598F7BECD4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumPsi.Data.MsSql", "HumPsi.Data.MsSql\HumPsi.Data.MsSql.csproj", "{8E58D66A-A164-4DE9-8565-21C352BF4DC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumPsi.Core", "HumPsi.Core\HumPsi.Core.csproj", "{8E58D66A-A164-4DE9-8565-21C352BF4DC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
