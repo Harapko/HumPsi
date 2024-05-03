@@ -4106,26 +4106,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bakud\\.nuget\\packages\\": {}
+    "/Users/maks/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Core\\HumPsi.Core.csproj",
+      "projectUniqueName": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Core/HumPsi.Core.csproj",
       "projectName": "HumPsi.Core",
-      "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Core\\HumPsi.Core.csproj",
-      "packagesPath": "C:\\Users\\bakud\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Core\\obj\\",
+      "projectPath": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Core/HumPsi.Core.csproj",
+      "packagesPath": "/Users/maks/.nuget/packages/",
+      "outputPath": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bakud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/maks/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4175,7 +4173,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

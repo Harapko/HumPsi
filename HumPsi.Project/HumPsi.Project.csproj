@@ -22,6 +22,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\HumPsi.Core\HumPsi.Core.csproj" />
+      <ProjectReference Include="..\HumPsi.DataAccess\HumPsi.DataAccess.csproj" />
     </ItemGroup>
 
 </Project>

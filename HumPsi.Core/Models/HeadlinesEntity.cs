@@ -1,4 +1,4 @@
-namespace HumPsi.Data.MsSql.Models;
+namespace HumPsi.Core.Models;
 
 public class HeadlinesEntity
 {
@@ -32,12 +32,17 @@ public class HeadlinesEntity
 
         if (string.IsNullOrEmpty(title) || title.Length > MAX_TITLE_LENGHT)
         {
-            error = "Title can't be empty or longer then 50 symbols";
+            error = "Title headlines can't be empty or longer then 50 symbols";
         }
 
         if (string.IsNullOrEmpty(titlePhoto))
         {
             error = "Title photo is required";
+        }
+
+        if (sectionId.Equals(null))
+        {
+            error = "Headlines must have a section";
         }
         
         var headlines = new HeadlinesEntity(id, title, titlePhoto, sectionId, section);

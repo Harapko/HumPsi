@@ -1,4 +1,4 @@
-using HumPsi.Data.MsSql;
+using HumPsi.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

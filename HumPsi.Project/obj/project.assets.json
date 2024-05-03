@@ -1516,6 +1516,21 @@
         "runtime": {
           "bin/placeholder/HumPsi.Core.dll": {}
         }
+      },
+      "HumPsi.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "HumPsi.Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.4"
+        },
+        "compile": {
+          "bin/placeholder/HumPsi.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HumPsi.DataAccess.dll": {}
+        }
       }
     }
   },
@@ -4115,45 +4130,52 @@
       "type": "project",
       "path": "../HumPsi.Core/HumPsi.Core.csproj",
       "msbuildProject": "../HumPsi.Core/HumPsi.Core.csproj"
+    },
+    "HumPsi.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../HumPsi.DataAccess/HumPsi.DataAccess.csproj",
+      "msbuildProject": "../HumPsi.DataAccess/HumPsi.DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "HumPsi.Core >= 1.0.0",
+      "HumPsi.DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bakud\\.nuget\\packages\\": {}
+    "/Users/maks/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\HumPsi.Project.csproj",
+      "projectUniqueName": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/HumPsi.Project.csproj",
       "projectName": "HumPsi.Project",
-      "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\HumPsi.Project.csproj",
-      "packagesPath": "C:\\Users\\bakud\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\obj\\",
+      "projectPath": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/HumPsi.Project.csproj",
+      "packagesPath": "/Users/maks/.nuget/packages/",
+      "outputPath": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bakud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/maks/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Core\\HumPsi.Core.csproj": {
-              "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Core\\HumPsi.Core.csproj"
+            "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Core/HumPsi.Core.csproj": {
+              "projectPath": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Core/HumPsi.Core.csproj"
+            },
+            "/Users/maks/RiderProjects/HumPsiProject/HumPsi.DataAccess/HumPsi.DataAccess.csproj": {
+              "projectPath": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.DataAccess/HumPsi.DataAccess.csproj"
             }
           }
         }
@@ -4202,7 +4224,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,14 +1,11 @@
-﻿using HumPsi.Data.MsSql.Configurations;
-using HumPsi.Data.MsSql.Models;
+﻿using HumPsi.Core.Configurations;
+using HumPsi.Core.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace HumPsi.Data.MsSql;
+namespace HumPsi.DataAccess;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
-    
-    
-    
     public DbSet<SectionEntity> Section { get; set; }
     
     public DbSet<HeadlinesEntity> Headlines { get; set; }

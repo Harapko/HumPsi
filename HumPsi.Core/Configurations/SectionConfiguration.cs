@@ -1,8 +1,8 @@
-using HumPsi.Data.MsSql.Models;
+using HumPsi.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace HumPsi.Data.MsSql.Configurations;
+namespace HumPsi.Core.Configurations;
 
 public class SectionConfiguration : IEntityTypeConfiguration<SectionEntity>
 {
