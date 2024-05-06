@@ -3,7 +3,7 @@ using HumPsi.Core.Models;
 
 namespace HumPsi.DataAccess.Entites;
 
-public class Articles
+public class ArticlesEntity
 {
     public Guid Id { get;  }
 
@@ -22,7 +22,7 @@ public class Articles
 
 
     public Guid HeadlinesId { get; set; }
-    public HeadlinesEntity Headlines { get; set; }
+    public Core.Models.Headlines Headlines { get; set; }
     
-    public List<PhotoEntity>? Photos { get; set; } = [];
+    public List<Core.Models.Photo>? Photos { get; set; } = [];
 }

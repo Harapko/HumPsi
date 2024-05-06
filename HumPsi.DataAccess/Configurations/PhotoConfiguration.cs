@@ -3,11 +3,12 @@ using HumPsi.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace HumPsi.Core.Configurations;
+namespace HumPsi.DataAccess.Configurations;
 
-public class PhotoConfiguration : IEntityTypeConfiguration<PhotoEntity>
+
+public class PhotoConfiguration : IEntityTypeConfiguration<Photo>
 {
-    public void Configure(EntityTypeBuilder<PhotoEntity> builder)
+    public void Configure(EntityTypeBuilder<Photo> builder)
     {
         builder.HasKey(p => p.Id);
 
@@ -17,5 +18,7 @@ public class PhotoConfiguration : IEntityTypeConfiguration<PhotoEntity>
             .HasForeignKey(p=>p.ArticleId);
 
 
+        builder.Property(p => p.FilePath)
+            .IsRequired();
     }
 }

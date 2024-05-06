@@ -1,9 +1,9 @@
 namespace HumPsi.Core.Models;
 
 
-public class PhotoEntity
+public class Photo
 {
-    private PhotoEntity(Guid id, string filePath, string fileExtension, Guid articleId, ArticlesEntity articles)
+    private Photo(Guid id, string filePath, string fileExtension, Guid articleId, Articles articles)
     {
         Id = id;
         FilePath = filePath;
@@ -16,9 +16,9 @@ public class PhotoEntity
     public string FilePath { get; } = string.Empty;
     public string FileExtension { get; } = string.Empty;
     public Guid ArticleId { get;  }
-    public ArticlesEntity Articles { get;  }
+    public Articles Articles { get;  }
 
-    public static (PhotoEntity photoEntity, string Error) Create(Guid id, string filePath, string fileExtension, Guid articleId, ArticlesEntity articles)
+    public static (Photo photoEntity, string Error) Create(Guid id, string filePath, string fileExtension, Guid articleId, Articles articles)
     {
         var error = string.Empty;
 
@@ -27,7 +27,7 @@ public class PhotoEntity
             error = "File can't have empty path";
         }
         
-        var photo = new PhotoEntity(id, filePath, fileExtension, articleId, articles);
+        var photo = new Photo(id, filePath, fileExtension, articleId, articles);
         return (photo, error);
     }
 }

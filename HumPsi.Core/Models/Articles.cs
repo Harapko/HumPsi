@@ -2,13 +2,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HumPsi.Core.Models;
 
-public class ArticlesEntity
+public class Articles
 {
     public const int MAX_TITLE_LENGHT = 50;
 
     
-    private ArticlesEntity(Guid id, string title, string subTitle, List<string> contentTitle,
-        List<string> content, string shortContentTitle, string shortContent, Guid headlinesId, HeadlinesEntity headlines, List<PhotoEntity> photos)
+    private Articles(Guid id, string title, string subTitle, List<string> contentTitle,
+        List<string> content, string shortContentTitle, string shortContent, Guid headlinesId, Headlines headlines, List<Photo> photos)
     {
         Id = id;
         Title = title;
@@ -39,14 +39,14 @@ public class ArticlesEntity
 
 
     public Guid HeadlinesId { get;  }
-    public HeadlinesEntity Headlines { get;  }
+    public Headlines Headlines { get;  }
     
-    public List<PhotoEntity>? Photos { get;  } = [];
+    public List<Photo>? Photos { get;  } = [];
 
-    public static (ArticlesEntity articlesEntity, string Error) Create(Guid id, string title, string subTitle,
+    public static (Articles articlesEntity, string Error) Create(Guid id, string title, string subTitle,
         List<string> contentTitle,
         List<string> content, string shortContentTitle, string shortContent, Guid headlinesId,
-        HeadlinesEntity headlines, List<PhotoEntity> photos)
+        Headlines headlines, List<Photo> photos)
     {
         var error = string.Empty;
 
@@ -56,7 +56,7 @@ public class ArticlesEntity
         }
         
         
-        var article = new ArticlesEntity(id, title, subTitle, contentTitle, content, shortContentTitle, shortContent, headlinesId, headlines, photos);
+        var article = new Articles(id, title, subTitle, contentTitle, content, shortContentTitle, shortContent, headlinesId, headlines, photos);
 
         return (article, error);
     }

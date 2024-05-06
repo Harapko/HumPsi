@@ -1,10 +1,10 @@
 namespace HumPsi.Core.Models;
 
-public class HeadlinesEntity
+public class Headlines
 {
     public const int MAX_TITLE_LENGHT = 50;
 
-    private HeadlinesEntity(Guid id, string title, string titlePhoto, Guid sectionId, SectionEntity section)
+    private Headlines(Guid id, string title, string titlePhoto, Guid sectionId, Section section)
     {
         Id = id;
         Title = title;
@@ -21,12 +21,12 @@ public class HeadlinesEntity
     public string TitlePhoto { get;  } = string.Empty;
 
     public Guid SectionId { get;  }
-    public SectionEntity Section { get;  }
+    public Section Section { get;  }
 
-    public List<ArticlesEntity> Articles { get;  } = [];
+    public List<Articles> Articles { get;  } = [];
 
-    public static (HeadlinesEntity headlines, string Error) Create(Guid id, string title, string titlePhoto,
-        Guid sectionId, SectionEntity section)
+    public static (Headlines headlines, string Error) Create(Guid id, string title, string titlePhoto,
+        Guid sectionId, Section section)
     {
         var error = string.Empty;
 
@@ -35,17 +35,12 @@ public class HeadlinesEntity
             error = "Title headlines can't be empty or longer then 50 symbols";
         }
 
-        if (string.IsNullOrEmpty(titlePhoto))
-        {
-            error = "Title photo is required";
-        }
-
         if (sectionId.Equals(null))
         {
             error = "Headlines must have a section";
         }
         
-        var headlines = new HeadlinesEntity(id, title, titlePhoto, sectionId, section);
+        var headlines = new Headlines(id, title, titlePhoto, sectionId, section);
 
         return (headlines, error);
     }

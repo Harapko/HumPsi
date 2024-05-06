@@ -1,14 +1,13 @@
 using HumPsi.Core.Models;
-
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace HumPsi.Core.Configurations;
+namespace HumPsi.DataAccess.Configurations;
 
 
-public class ArticlesConfiguration : IEntityTypeConfiguration<ArticlesEntity>
+public class ArticlesConfiguration : IEntityTypeConfiguration<Articles>
 {
-    public void Configure(EntityTypeBuilder<ArticlesEntity> builder)
+    public void Configure(EntityTypeBuilder<Articles> builder)
     {
         builder.HasKey(a => a.Id);
 
@@ -22,6 +21,9 @@ public class ArticlesConfiguration : IEntityTypeConfiguration<ArticlesEntity>
             .WithOne(p => p.Articles);
 
 
+        builder.Property(a => a.Title)
+            .IsRequired()
+            .HasMaxLength(Articles.MAX_TITLE_LENGHT);
 
 
     }

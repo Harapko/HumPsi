@@ -1,12 +1,12 @@
 namespace HumPsi.Core.Models;
 
 
-public class SectionEntity
+public class Section
 {
 
     public const int MAX_TITLE_LENGHT = 50;
 
-    private SectionEntity(Guid  id, string titleSection, List<HeadlinesEntity> headlines)
+    private Section(Guid  id, string titleSection, List<Headlines>? headlines)
     {
         Id = id;
         TitleSection = titleSection;
@@ -17,10 +17,10 @@ public class SectionEntity
 
     public string TitleSection { get;  } = string.Empty;
 
-    public List<HeadlinesEntity>? Headlines { get;  } = [];
+    public List<Headlines>? Headlines { get;  } = [];
 
-    public static (SectionEntity sectionEntity, string Error) Create(Guid id, string titleSection,
-        List<HeadlinesEntity> headlines)
+    public static (Section sectionEntity, string Error) Create(Guid id, string titleSection,
+        List<Headlines>? headlines)
     {
         var error = string.Empty;
 
@@ -30,7 +30,7 @@ public class SectionEntity
         }
         
         
-        var section = new SectionEntity(id, titleSection, headlines);
+        var section = new Section(id, titleSection, headlines);
         return (section, error);
     }
 }
