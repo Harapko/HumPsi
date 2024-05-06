@@ -33,5 +33,6 @@ public class Section
         var section = new Section(id, titleSection, headlines);
         return (section, error);
     }
+    //..
 }
 
