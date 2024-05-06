@@ -1,5 +1,6 @@
-﻿using HumPsi.Core.Configurations;
+﻿using HumPsi.DataAccess.Configurations;
 using HumPsi.Core.Models;
+using HumPsi.DataAccess.Entites;
 using Microsoft.EntityFrameworkCore;
 
 namespace HumPsi.DataAccess;

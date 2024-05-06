@@ -1,55 +1,55 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\HomeContent.css",
-      "PackagePath": "staticwebassets\\css\\Style\\HomeContent.css"
+      "Id": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/HomeContent.css",
+      "PackagePath": "staticwebassets/css/Style/HomeContent.css"
     },
     {
-      "Id": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\HomeContent.css.map",
-      "PackagePath": "staticwebassets\\css\\Style\\HomeContent.css.map"
+      "Id": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/HomeContent.css.map",
+      "PackagePath": "staticwebassets/css/Style/HomeContent.css.map"
     },
     {
-      "Id": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\HomeContent.scss",
-      "PackagePath": "staticwebassets\\css\\Style\\HomeContent.scss"
+      "Id": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/HomeContent.scss",
+      "PackagePath": "staticwebassets/css/Style/HomeContent.scss"
     },
     {
-      "Id": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\_Layout.scss",
-      "PackagePath": "staticwebassets\\css\\Style\\_Layout.scss"
+      "Id": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/_Layout.scss",
+      "PackagePath": "staticwebassets/css/Style/_Layout.scss"
     },
     {
-      "Id": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\_navMenu-partial.scss",
-      "PackagePath": "staticwebassets\\css\\Style\\_navMenu-partial.scss"
+      "Id": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/_navMenu-partial.scss",
+      "PackagePath": "staticwebassets/css/Style/_navMenu-partial.scss"
     },
     {
-      "Id": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\nullStyle.scss",
-      "PackagePath": "staticwebassets\\css\\Style\\nullStyle.scss"
+      "Id": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/nullStyle.scss",
+      "PackagePath": "staticwebassets/css/Style/nullStyle.scss"
     },
     {
-      "Id": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\style.css",
-      "PackagePath": "staticwebassets\\css\\style.css"
+      "Id": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
     },
     {
-      "Id": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\style.css.map",
-      "PackagePath": "staticwebassets\\css\\style.css.map"
+      "Id": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/style.css.map",
+      "PackagePath": "staticwebassets/css/style.css.map"
     },
     {
-      "Id": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\style.scss",
-      "PackagePath": "staticwebassets\\css\\style.scss"
+      "Id": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/style.scss",
+      "PackagePath": "staticwebassets/css/style.scss"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HumPsi.Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.HumPsi.Project.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HumPsi.Project.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.HumPsi.Project.props",
       "PackagePath": "build\\HumPsi.Project.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HumPsi.Project.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.HumPsi.Project.props",
       "PackagePath": "buildMultiTargeting\\HumPsi.Project.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HumPsi.Project.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.HumPsi.Project.props",
       "PackagePath": "buildTransitive\\HumPsi.Project.props"
     }
   ],
