@@ -16,9 +16,9 @@ public class SectionService : ISectionService
         return await _sectionsRepository.Get();
     }
 
-    public async Task<Guid> CreateSection(Section section, List<Headlines> headlinesList)
+    public async Task<Guid> CreateSection(Section section)
     {
-        return await _sectionsRepository.Create(section, headlinesList);
+        return await _sectionsRepository.Create(section);
     }
 
     public async Task<Guid> UpdateSection(Guid id, string title, List<Headlines> headlinesList)

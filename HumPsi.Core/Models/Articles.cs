@@ -6,9 +6,13 @@ public class Articles
 {
     public const int MAX_TITLE_LENGHT = 50;
 
+    private Articles()
+    {
+        
+    }
     
-    private Articles(Guid id, string title, string subTitle, List<string> contentTitle,
-        List<string> content, string shortContentTitle, string shortContent, Guid headlinesId, Headlines headlines, List<Photo> photos)
+    private Articles(Guid id, string title, string? subTitle, List<string>? contentTitle,
+        List<string>? content, string? shortContentTitle, string? shortContent, Headlines headlines, Guid headlinesId , List<Photo>? photos)
     {
         Id = id;
         Title = title;
@@ -17,24 +21,25 @@ public class Articles
         Content = content;
         ShortContentTitle = shortContentTitle;
         ShortContent = shortContent;
-        headlinesId = headlinesId;
+        HeadlinesId = headlinesId;
         Headlines = headlines;
         Photos = photos;
 
     }
-    public Guid Id { get;  }
+    
+    public Guid Id { get; }
 
     public string Title { get;  } = string.Empty;
     public string? SubTitle { get;  } = string.Empty;
     
 
     public List<string>? ContentTitle { get;  } = [];
-    [Column(TypeName = "nvarchar(24)")]
+    [Column(TypeName = "nvarchar(50)")]
     public List<string>? Content { get;  } = [];
 
 
     public string? ShortContentTitle { get;  } = string.Empty;
-    [Column(TypeName = "nvarchar(24)")]
+    [Column(TypeName = "nvarchar(50)")]
     public string? ShortContent { get;  } = string.Empty;
 
 
@@ -43,10 +48,10 @@ public class Articles
     
     public List<Photo>? Photos { get;  } = [];
 
-    public static (Articles articlesEntity, string Error) Create(Guid id, string title, string subTitle,
-        List<string> contentTitle,
-        List<string> content, string shortContentTitle, string shortContent, Guid headlinesId,
-        Headlines headlines, List<Photo> photos)
+    public static (Articles articlesEntity, string Error) Create(Guid id, string title, string? subTitle,
+        List<string>? contentTitle,
+        List<string>? content, string? shortContentTitle, string? shortContent,
+        Headlines headlines, Guid headlinesId, List<Photo>? photos)
     {
         var error = string.Empty;
 
@@ -56,7 +61,7 @@ public class Articles
         }
         
         
-        var article = new Articles(id, title, subTitle, contentTitle, content, shortContentTitle, shortContent, headlinesId, headlines, photos);
+        var article = new Articles(id, title, subTitle, contentTitle, content, shortContentTitle, shortContent, headlines, headlinesId, photos);
 
         return (article, error);
     }

@@ -1,13 +1,14 @@
 using HumPsi.Core.Models;
+using HumPsi.DataAccess.Entites;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace HumPsi.DataAccess.Configurations;
 
 
-public class ArticlesConfiguration : IEntityTypeConfiguration<Articles>
+public class ArticlesConfiguration : IEntityTypeConfiguration<ArticlesEntity>
 {
-    public void Configure(EntityTypeBuilder<Articles> builder)
+    public void Configure(EntityTypeBuilder<ArticlesEntity> builder)
     {
         builder.HasKey(a => a.Id);
 
@@ -18,7 +19,8 @@ public class ArticlesConfiguration : IEntityTypeConfiguration<Articles>
 
         builder
             .HasMany(a => a.Photos)
-            .WithOne(p => p.Articles);
+            .WithOne(p => p.Articles)
+            .HasForeignKey(p => p.ArticlesId);
 
 
         builder.Property(a => a.Title)

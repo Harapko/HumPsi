@@ -4,7 +4,7 @@ namespace HumPsi.Core.Repositories;
 
 public interface ISectionService
 {
-    Task<Guid> CreateSection(Section section, List<Headlines> headlinesList);
+    Task<Guid> CreateSection(Section section);
 
     Task<List<Section>> GetAllSection();
     

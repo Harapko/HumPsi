@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z4R7Y4FWoUQbYYOms9TF5NQOkc5Hbvl2wIm9al/U9pw=",
+  "Hash": "GjoWsNfbpRJCU6ib07hCTrPOfqvkIbIU7rzY5CiAfRE=",
   "Source": "HumPsi.Project",
   "BasePath": "_content/HumPsi.Project",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "HumPsi.Project/wwwroot",
+      "Name": "HumPsi.Project\\wwwroot",
       "Source": "HumPsi.Project",
-      "ContentRoot": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/",
+      "ContentRoot": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\",
       "BasePath": "_content/HumPsi.Project",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/style.css",
+      "Identity": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\style.css",
       "SourceId": "HumPsi.Project",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/",
+      "ContentRoot": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\",
       "BasePath": "_content/HumPsi.Project",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/style.css"
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/style.css.map",
+      "Identity": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\style.css.map",
       "SourceId": "HumPsi.Project",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/",
+      "ContentRoot": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\",
       "BasePath": "_content/HumPsi.Project",
       "RelativePath": "css/style.css.map",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/style.css.map"
+      "OriginalItemSpec": "wwwroot\\css\\style.css.map"
     },
     {
-      "Identity": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/style.scss",
+      "Identity": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\style.scss",
       "SourceId": "HumPsi.Project",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/",
+      "ContentRoot": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\",
       "BasePath": "_content/HumPsi.Project",
       "RelativePath": "css/style.scss",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/style.scss"
+      "OriginalItemSpec": "wwwroot\\css\\style.scss"
     },
     {
-      "Identity": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/_Layout.scss",
+      "Identity": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\_Layout.scss",
       "SourceId": "HumPsi.Project",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/",
+      "ContentRoot": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\",
       "BasePath": "_content/HumPsi.Project",
       "RelativePath": "css/Style/_Layout.scss",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Style/_Layout.scss"
+      "OriginalItemSpec": "wwwroot\\css\\Style\\_Layout.scss"
     },
     {
-      "Identity": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/_navMenu-partial.scss",
+      "Identity": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\_navMenu-partial.scss",
       "SourceId": "HumPsi.Project",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/",
+      "ContentRoot": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\",
       "BasePath": "_content/HumPsi.Project",
       "RelativePath": "css/Style/_navMenu-partial.scss",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Style/_navMenu-partial.scss"
+      "OriginalItemSpec": "wwwroot\\css\\Style\\_navMenu-partial.scss"
     },
     {
-      "Identity": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/HomeContent.css",
+      "Identity": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\HomeContent.css",
       "SourceId": "HumPsi.Project",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/",
+      "ContentRoot": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\",
       "BasePath": "_content/HumPsi.Project",
       "RelativePath": "css/Style/HomeContent.css",
       "AssetKind": "All",
@@ -128,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Style/HomeContent.css"
+      "OriginalItemSpec": "wwwroot\\css\\Style\\HomeContent.css"
     },
     {
-      "Identity": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/HomeContent.css.map",
+      "Identity": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\HomeContent.css.map",
       "SourceId": "HumPsi.Project",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/",
+      "ContentRoot": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\",
       "BasePath": "_content/HumPsi.Project",
       "RelativePath": "css/Style/HomeContent.css.map",
       "AssetKind": "All",
@@ -147,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Style/HomeContent.css.map"
+      "OriginalItemSpec": "wwwroot\\css\\Style\\HomeContent.css.map"
     },
     {
-      "Identity": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/HomeContent.scss",
+      "Identity": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\HomeContent.scss",
       "SourceId": "HumPsi.Project",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/",
+      "ContentRoot": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\",
       "BasePath": "_content/HumPsi.Project",
       "RelativePath": "css/Style/HomeContent.scss",
       "AssetKind": "All",
@@ -166,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Style/HomeContent.scss"
+      "OriginalItemSpec": "wwwroot\\css\\Style\\HomeContent.scss"
     },
     {
-      "Identity": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/css/Style/nullStyle.scss",
+      "Identity": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\css\\Style\\nullStyle.scss",
       "SourceId": "HumPsi.Project",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/maks/RiderProjects/HumPsiProject/HumPsi.Project/wwwroot/",
+      "ContentRoot": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\",
       "BasePath": "_content/HumPsi.Project",
       "RelativePath": "css/Style/nullStyle.scss",
       "AssetKind": "All",
@@ -185,7 +185,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Style/nullStyle.scss"
+      "OriginalItemSpec": "wwwroot\\css\\Style\\nullStyle.scss"
     }
   ]
 }

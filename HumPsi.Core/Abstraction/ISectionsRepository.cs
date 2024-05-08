@@ -1,10 +1,11 @@
 using HumPsi.Core.Models;
 
+
 namespace HumPsi.Core.Repositories;
 
 public interface ISectionsRepository
 {
-    Task<Guid> Create(Section section, List<Headlines> headlinesList);
+    Task<Guid> Create(Section section);
 
     Task<List<Section>> Get();
     
