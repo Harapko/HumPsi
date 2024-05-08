@@ -23,19 +23,24 @@ public class SectionsRepository : ISectionsRepository
             .ToListAsync();
 
         var sections = sectionEntity
-            .Select(s => Section.Create(s.Id, s.TitleSection, s.Headlines).sectionEntity)
+            .Select(s => Section.Create(s.Id, s.TitleSection, new List<Headlines>()).sectionEntity)
             .ToList();
 
         return sections;
     }
 
-    public async Task<Guid> Create(Section section, List<Headlines> headlinesList)
+    public Task<Guid> Update(Guid id, string title, List<Headlines> headlinesList)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<Guid> Create(Section section)
     {
         var sectionEntity = new SectionEntity()
         {
             Id = section.Id,
             TitleSection = section.TitleSection,
-            Headlines = headlinesList
+            Headlines = new List<HeadlinesEntity>()
         };
 
         await _context.Section.AddAsync(sectionEntity);
@@ -44,16 +49,16 @@ public class SectionsRepository : ISectionsRepository
         return sectionEntity.Id;
     }
 
-    public async Task<Guid> Update(Guid id, string title, List<Headlines> headlinesList)
-    {
-        await _context.Section
-            .Where(s => s.Id == id)
-            .ExecuteUpdateAsync(set => set
-                .SetProperty(s => s.TitleSection, s => title)
-                .SetProperty(s => s.Headlines, s => headlinesList));
-
-        return id;
-    }
+    // public async Task<Guid> Update(Guid id, string title, List<HeadlinesEntity> headlinesList)
+    // {
+    //     await _context.Section
+    //         .Where(s => s.Id == id)
+    //         .ExecuteUpdateAsync(set => set
+    //             .SetProperty(s => s.TitleSection, s => title)
+    //             .SetProperty(s => s.Headlines, s => headlinesList));
+    //
+    //     return id;
+    // }
 
     public async Task<Guid> Delete(Guid id)
     {

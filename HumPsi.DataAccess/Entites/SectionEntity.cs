@@ -8,5 +8,5 @@ public class SectionEntity
 
     public string TitleSection { get; set; } = string.Empty;
 
-    public List<Core.Models.Headlines>? Headlines { get; set; } = [];
+    public List<HeadlinesEntity>? Headlines { get; set; } = [];
 }

@@ -6,6 +6,10 @@ public class Section
 
     public const int MAX_TITLE_LENGHT = 50;
 
+    private Section()
+    {
+        
+    }
     private Section(Guid  id, string titleSection, List<Headlines>? headlines)
     {
         Id = id;
