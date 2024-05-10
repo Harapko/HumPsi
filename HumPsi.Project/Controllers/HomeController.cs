@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HumPsiProject.Controllers;
 
+[ApiController]
 [Route("[controller]")]
 public class HomeController : ControllerBase
 {

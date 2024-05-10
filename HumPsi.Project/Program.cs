@@ -14,9 +14,20 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<ISectionService, SectionService>();
 builder.Services.AddScoped<ISectionsRepository, SectionsRepository>();
 
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policyBuilder =>
+    {
+        policyBuilder.WithOrigins(builder.Configuration.GetSection("AllowedOrigins").Get<string[]>());
+    });
+});
+
+
 var app = builder.Build();
 
 app.MapControllers();
 app.UseRouting();
+app.UseCors();
 app.UseStaticFiles();
 app.Run();

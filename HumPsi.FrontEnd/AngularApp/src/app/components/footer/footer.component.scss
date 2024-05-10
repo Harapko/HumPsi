@@ -1,0 +1,45 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  &__wrapper {
+    display: grid;
+    grid-template-rows: 75% 25%;
+    color: white;
+
+  }
+
+  &__info {
+    background-color: #32323c;
+
+    &__wrapper {
+      display: grid;
+      width: 1250px;
+      margin: 0 auto;
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+
+    }
+
+    &__social-network {
+      justify-self: end;
+    }
+  }
+
+  &__privacy {
+    background-color: #19191e;
+    bottom: 10px;
+    &__wrapper {
+      width: 1250px;
+      margin: 0 auto;
+    }
+
+    &__info {
+      text-align: center;
+    }
+  }
+}

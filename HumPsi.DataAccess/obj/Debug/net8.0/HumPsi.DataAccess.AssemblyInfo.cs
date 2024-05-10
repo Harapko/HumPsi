@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HumPsi.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d8cdd20d3d92dd7aff6ac66281110f6cbb6fb61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+526bc4f2139b6bf996dc6f2190bb39984e16a0fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("HumPsi.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HumPsi.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

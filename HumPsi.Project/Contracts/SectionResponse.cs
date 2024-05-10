@@ -3,7 +3,7 @@ using HumPsi.DataAccess.Entites;
 
 namespace HumPsiProject.Contracts;
 
-public record SectionResponse(Guid id, string title, List<Headlines>? headlinesList)
+public record SectionResponse(Guid id, string titleSection, List<Headlines>? headlinesList)
 {
     
 }

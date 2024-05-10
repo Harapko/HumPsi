@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumPsi.DataAccess", "HumPsi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumPsi.Application", "HumPsi.Application\HumPsi.Application.csproj", "{8F93E8D8-E15C-4DEE-BF38-9A59637E3103}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumPsi.FrontEnd", "HumPsi.FrontEnd\HumPsi.FrontEnd.csproj", "{503F238E-08CB-4C00-8FC0-57F9B6F5BBB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{8F93E8D8-E15C-4DEE-BF38-9A59637E3103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F93E8D8-E15C-4DEE-BF38-9A59637E3103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F93E8D8-E15C-4DEE-BF38-9A59637E3103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{503F238E-08CB-4C00-8FC0-57F9B6F5BBB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503F238E-08CB-4C00-8FC0-57F9B6F5BBB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503F238E-08CB-4C00-8FC0-57F9B6F5BBB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503F238E-08CB-4C00-8FC0-57F9B6F5BBB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

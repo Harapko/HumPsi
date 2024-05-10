@@ -3,8 +3,6 @@ C:/Users/bakud/RiderProjects/HumPsiProject/HumPsi.Project/obj/Debug/net8.0/HumPs
 C:/Users/bakud/RiderProjects/HumPsiProject/HumPsi.Project/obj/Debug/net8.0/HumPsi.Project.AssemblyInfo.cs
 C:/Users/bakud/RiderProjects/HumPsiProject/HumPsi.Project/obj/Debug/net8.0/HumPsi.Project.csproj.CoreCompileInputs.cache
 C:/Users/bakud/RiderProjects/HumPsiProject/HumPsi.Project/obj/Debug/net8.0/HumPsi.Project.MvcApplicationPartsAssemblyInfo.cache
-C:/Users/bakud/RiderProjects/HumPsiProject/HumPsi.Project/obj/Debug/net8.0/HumPsi.Project.RazorAssemblyInfo.cache
-C:/Users/bakud/RiderProjects/HumPsiProject/HumPsi.Project/obj/Debug/net8.0/HumPsi.Project.RazorAssemblyInfo.cs
 C:/Users/bakud/RiderProjects/HumPsiProject/HumPsi.Project/bin/Debug/net8.0/appsettings.Development.json
 C:/Users/bakud/RiderProjects/HumPsiProject/HumPsi.Project/bin/Debug/net8.0/appsettings.json
 C:/Users/bakud/RiderProjects/HumPsiProject/HumPsi.Project/bin/Debug/net8.0/HumPsi.Project.staticwebassets.runtime.json
@@ -396,8 +394,6 @@ C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPs
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPsi.Project.AssemblyInfo.cs
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPsi.Project.csproj.CoreCompileInputs.cache
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPsi.Project.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPsi.Project.RazorAssemblyInfo.cache
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPsi.Project.RazorAssemblyInfo.cs
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPsi.Project.sourcelink.json
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\staticwebassets.development.json
