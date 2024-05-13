@@ -72,9 +72,6 @@ namespace HumPsi.DataAccess.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<Guid?>("TitlePhotoId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
                     b.HasIndex("SectionId");
@@ -88,23 +85,11 @@ namespace HumPsi.DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("ArticlesId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("FilePath")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("HeadlinesId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("ArticlesId");
-
-                    b.HasIndex("HeadlinesId")
-                        .IsUnique()
-                        .HasFilter("[HeadlinesId] IS NOT NULL");
 
                     b.ToTable("Photo");
                 });
@@ -127,52 +112,52 @@ namespace HumPsi.DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("6aeb99f8-7580-4cfb-9326-201173b1ff6d"),
+                            Id = new Guid("f0537962-9406-496a-a212-314dc18d0c9b"),
                             TitleSection = "Biochemistry"
                         },
                         new
                         {
-                            Id = new Guid("d2bbc481-6908-4dc8-b979-e6398e8b22db"),
+                            Id = new Guid("dce18de7-942f-4932-8e11-3c898382da00"),
                             TitleSection = "Histology"
                         },
                         new
                         {
-                            Id = new Guid("01ba7970-8b13-4364-9530-4b232037a402"),
+                            Id = new Guid("3d9c683d-f36c-4b54-9785-7a0a01157ee5"),
                             TitleSection = "Cardiovascular"
                         },
                         new
                         {
-                            Id = new Guid("583508f1-c5de-40b8-9b13-78940a4d2db9"),
+                            Id = new Guid("c89d29a5-07e2-44a5-a3d7-f1792b5a1f93"),
                             TitleSection = "Respiratory"
                         },
                         new
                         {
-                            Id = new Guid("7e2ff28b-b27a-4148-9b7f-808d66af82b2"),
+                            Id = new Guid("071dc2aa-6390-43d6-9de7-6a300089094b"),
                             TitleSection = "Gastrointestinal"
                         },
                         new
                         {
-                            Id = new Guid("f11cafa8-40b3-4cd2-87d1-b217b3413317"),
+                            Id = new Guid("f76b9295-6e15-4d08-a6ec-51ca700ca6d4"),
                             TitleSection = "Urinary"
                         },
                         new
                         {
-                            Id = new Guid("998d048b-98e2-464e-b686-b83d625452f1"),
+                            Id = new Guid("3e549725-45b8-4b79-98fa-5aa1e099671a"),
                             TitleSection = "Reproductive"
                         },
                         new
                         {
-                            Id = new Guid("208e144b-3a09-4f1e-8d8f-3b06e4e78174"),
+                            Id = new Guid("ed5f90ac-910c-4d14-8f5a-2f63ffbcc9bc"),
                             TitleSection = "Neurology"
                         },
                         new
                         {
-                            Id = new Guid("f0d70a63-9971-44c5-8f42-61d276e37cac"),
+                            Id = new Guid("6cb5174e-b47a-4e36-bee4-d7a69af58b93"),
                             TitleSection = "Endocrine"
                         },
                         new
                         {
-                            Id = new Guid("45a62589-ec08-47ae-83c0-969b54d6dbd9"),
+                            Id = new Guid("b6455da2-7c27-4d5a-9cb7-ade0bf471fe0"),
                             TitleSection = "Immunology/Haematology"
                         });
                 });
@@ -199,31 +184,9 @@ namespace HumPsi.DataAccess.Migrations
                     b.Navigation("Section");
                 });
 
-            modelBuilder.Entity("HumPsi.DataAccess.Entites.PhotoEntity", b =>
-                {
-                    b.HasOne("HumPsi.DataAccess.Entites.ArticlesEntity", "Articles")
-                        .WithMany("Photos")
-                        .HasForeignKey("ArticlesId");
-
-                    b.HasOne("HumPsi.DataAccess.Entites.HeadlinesEntity", "Headlines")
-                        .WithOne("Photo")
-                        .HasForeignKey("HumPsi.DataAccess.Entites.PhotoEntity", "HeadlinesId");
-
-                    b.Navigation("Articles");
-
-                    b.Navigation("Headlines");
-                });
-
-            modelBuilder.Entity("HumPsi.DataAccess.Entites.ArticlesEntity", b =>
-                {
-                    b.Navigation("Photos");
-                });
-
             modelBuilder.Entity("HumPsi.DataAccess.Entites.HeadlinesEntity", b =>
                 {
                     b.Navigation("Articles");
-
-                    b.Navigation("Photo");
                 });
 
             modelBuilder.Entity("HumPsi.DataAccess.Entites.SectionEntity", b =>

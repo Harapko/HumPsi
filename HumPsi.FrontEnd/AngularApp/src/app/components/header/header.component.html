@@ -22,17 +22,18 @@
     <nav class="header__nav">
       <div class="header__nav__wrapper">
 
-        @for (section of sections; track section){
-          <div class="header__nav__button">
-            <a href="">{{section.titleSection}}</a>
-            <div class="partial">
-              <div class="partial__wrapper">
-                <app-nav-menu-headlines></app-nav-menu-headlines>
+        @if (sections$ | async; as sections){
+          @for (section of sections; track section){
+            <div class="header__nav__button">
+              <a href="">{{section.titleSection}}</a>
+              <div class="partial">
+                <div class="partial__wrapper">
+                  <app-nav-menu-headlines [section]="section"></app-nav-menu-headlines>
+                </div>
               </div>
             </div>
-          </div>
+          }
         }
-
 
       </div>
     </nav>

@@ -409,3 +409,4 @@ C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\refin
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPsi.Project.pdb
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPsi.Project.genruntimeconfig.cache
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\ref\HumPsi.Project.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\bin\Debug\net8.0\CSharpFunctionalExtensions.dll

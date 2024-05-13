@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "9vEhwSO7A4XxfXhjF0AnjUfFz19QlbkqvlSno8/nQp/HncQ7cwBs9iZSw7GIQA8X6kft2krnR79oEieDFwqxDg==",
+  "dgSpecHash": "5sULB7XyZjLYDFOZje5+qE6o58OoNNUB4PF76WOpo34A1Ill4bYwKvcFTH3IHm04TG0r+Sfb485U76zlp4vkzg==",
   "success": true,
   "projectFilePath": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\HumPsi.Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bakud\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\bakud\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\bakud\\.nuget\\packages\\csharpfunctionalextensions\\2.42.0\\csharpfunctionalextensions.2.42.0.nupkg.sha512",
     "C:\\Users\\bakud\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\bakud\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\bakud\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

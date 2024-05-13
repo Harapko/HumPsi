@@ -8,6 +8,11 @@
 
     <ItemGroup>
       <Folder Include="AngularApp\src\app\components\" />
+      <Folder Include="AngularApp\src\app\models\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CSharpFunctionalExtensions" Version="2.42.0" />
     </ItemGroup>
 
 </Project>

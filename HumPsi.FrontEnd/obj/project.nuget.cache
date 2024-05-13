@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "F49I+vHtsSGTmToxtKztUGJC23M46UjuH0Y64fq69oHzqhEGYMub1XWNnlT1/I3XI53ichPcw3b9rJ101Szrdg==",
+  "dgSpecHash": "YMXgTv7luB7G/gkzMMEDsScKJuj9dUAQy8mpQzEaNxOUwbhs3Zd46IBBfO7jn+Og4+6Gv0ptzGWsBsearMcZZg==",
   "success": true,
   "projectFilePath": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.FrontEnd\\HumPsi.FrontEnd.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\bakud\\.nuget\\packages\\csharpfunctionalextensions\\2.42.0\\csharpfunctionalextensions.2.42.0.nupkg.sha512"
+  ],
   "logs": []
 }

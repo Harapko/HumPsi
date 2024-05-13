@@ -46,6 +46,7 @@ public class Articles
     public Guid HeadlinesId { get;  }
     public Headlines Headlines { get;  }
     
+    
     public List<Photo>? Photos { get;  } = [];
 
     public static (Articles articlesEntity, string Error) Create(Guid id, string title, string? subTitle,

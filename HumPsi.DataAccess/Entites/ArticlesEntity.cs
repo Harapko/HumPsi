@@ -26,5 +26,6 @@ public class ArticlesEntity
 
     public HeadlinesEntity Headlines { get; set; }
     
-    public List<PhotoEntity>? Photos { get; set; } = [];
+    [NotMapped]
+    public List<Photo>? Photos { get; set; } = [];
 }

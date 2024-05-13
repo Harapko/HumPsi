@@ -22,15 +22,12 @@ public class HeadlinesConfiguration : IEntityTypeConfiguration<HeadlinesEntity>
             .HasOne(h => h.Section)
             .WithMany(s=>s.Headlines)
             .HasForeignKey(h=>h.SectionId);
+       
 
         builder.Property(h => h.Title)
             .IsRequired()
             .HasMaxLength(Headlines.MAX_TITLE_LENGHT);
 
-        builder
-            .HasOne(h => h.Photo)
-            .WithOne(p => p.Headlines)
-            .HasForeignKey<HeadlinesEntity>(h=>h.TitlePhotoId);
 
 
 

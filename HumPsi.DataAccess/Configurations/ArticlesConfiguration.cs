@@ -17,10 +17,7 @@ public class ArticlesConfiguration : IEntityTypeConfiguration<ArticlesEntity>
             .WithMany(h => h.Articles)
             .HasForeignKey(a=>a.HeadlinesId);
 
-        builder
-            .HasMany(a => a.Photos)
-            .WithOne(p => p.Articles)
-            .HasForeignKey(p => p.ArticlesId);
+        
 
 
         builder.Property(a => a.Title)

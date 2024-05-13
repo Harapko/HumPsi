@@ -1,4 +1,5 @@
-﻿using HumPsi.DataAccess.Configurations;
+﻿using HumPsi.Core.Models;
+using HumPsi.DataAccess.Configurations;
 using HumPsi.DataAccess.Entites;
 using Microsoft.EntityFrameworkCore;
 
@@ -34,5 +35,6 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
             new SectionEntity{Id = Guid.NewGuid(), TitleSection = "Endocrine", Headlines = []},
             new SectionEntity{Id = Guid.NewGuid(), TitleSection = "Immunology/Haematology", Headlines = []}
         );
+
     }
 }

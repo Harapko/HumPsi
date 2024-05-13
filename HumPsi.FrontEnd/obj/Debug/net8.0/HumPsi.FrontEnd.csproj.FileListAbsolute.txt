@@ -1,0 +1,13 @@
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\bin\Debug\net8.0\HumPsi.FrontEnd.deps.json
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\bin\Debug\net8.0\HumPsi.FrontEnd.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\bin\Debug\net8.0\HumPsi.FrontEnd.pdb
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\obj\Debug\net8.0\HumPsi.FrontEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\obj\Debug\net8.0\HumPsi.FrontEnd.AssemblyInfoInputs.cache
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\obj\Debug\net8.0\HumPsi.FrontEnd.AssemblyInfo.cs
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\obj\Debug\net8.0\HumPsi.FrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\obj\Debug\net8.0\HumPsi.FrontEnd.sourcelink.json
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\obj\Debug\net8.0\HumPsi.FrontEnd.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\obj\Debug\net8.0\refint\HumPsi.FrontEnd.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\obj\Debug\net8.0\HumPsi.FrontEnd.pdb
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\obj\Debug\net8.0\ref\HumPsi.FrontEnd.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.FrontEnd\obj\Debug\net8.0\HumPsi.FrontEnd.csproj.AssemblyReference.cache

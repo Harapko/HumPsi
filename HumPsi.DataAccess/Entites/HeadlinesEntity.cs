@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using HumPsi.Core.Models;
 
 namespace HumPsi.DataAccess.Entites;
@@ -11,8 +12,8 @@ public class HeadlinesEntity
     public Guid SectionId { get; set; }
     public SectionEntity Section { get; set; }
     
-    public Guid? TitlePhotoId { get; set; }
-    public PhotoEntity? Photo { get; set; }
+    [NotMapped]
+    public Photo? Photo { get; set; }
     
     public List<ArticlesEntity>? Articles { get; set; } = [];
 }

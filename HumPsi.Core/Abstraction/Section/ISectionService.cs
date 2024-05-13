@@ -8,7 +8,7 @@ public interface ISectionService
 
     Task<List<Section>> GetAllSection();
     
-    Task<Guid> UpdateSection(Guid id, string title, List<Headlines> headlinesList);
+    Task<Guid> UpdateSection(Guid id, string title);
     
     Task<Guid> DeleteSection(Guid id);
 }

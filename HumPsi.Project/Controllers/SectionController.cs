@@ -1,26 +1,27 @@
 using HumPsi.Core.Repositories;
 using HumPsiProject.Contracts;
+using HumPsiProject.Contracts.Section;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HumPsiProject.Controllers;
 
 [ApiController]
-[Route("[controller]")]
-public class HomeController : ControllerBase
+public class SectionController : ControllerBase
 {
     private readonly ISectionService  _sectionService;
 
-    public HomeController(ISectionService sectionService)
+    public SectionController(ISectionService sectionService)
     {
         _sectionService = sectionService;
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<SectionResponse>>> GetSection()
+    [Route("/home")]
+    public async Task<ActionResult<List<SectionResponse>>> GetSection(Guid id)
     {
         var section = await _sectionService.GetAllSection();
 
-        var response = section.Select(s => new SectionResponse(s.Id, s.TitleSection, s.Headlines));
+        var response = section.Select(s => new SectionResponse(s.Id, s.TitleSection));
 
         return Ok(response);
     }

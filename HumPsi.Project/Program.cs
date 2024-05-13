@@ -1,5 +1,7 @@
 using HumPsi.Application;
 using HumPsi.Core.Repositories;
+using HumPsi.Data.MsSql.Abstraction.Headline;
+using HumPsi.Data.MsSql.Abstraction.Photo;
 using HumPsi.DataAccess;
 using HumPsi.DataAccess.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +15,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<ISectionService, SectionService>();
 builder.Services.AddScoped<ISectionsRepository, SectionsRepository>();
+
+builder.Services.AddScoped<IHeadlineService, HeadlinesService>();
+builder.Services.AddScoped<IHeadlinesRepository, HeadlinesRepository>();
+
+builder.Services.AddScoped<IPhotoService, PhotoService>();
 
 
 builder.Services.AddCors(options =>

@@ -21,9 +21,9 @@ public class SectionService : ISectionService
         return await _sectionsRepository.Create(section);
     }
 
-    public async Task<Guid> UpdateSection(Guid id, string title, List<Headlines> headlinesList)
+    public async Task<Guid> UpdateSection(Guid id, string title)
     {
-        return await _sectionsRepository.Update(id, title, headlinesList);
+        return await _sectionsRepository.Update(id, title);
     }
 
     public async Task<Guid> DeleteSection(Guid id)

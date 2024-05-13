@@ -30,6 +30,9 @@
             "projectReferences": {
               "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Core\\HumPsi.Core.csproj": {
                 "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Core\\HumPsi.Core.csproj"
+              },
+              "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.DataAccess\\HumPsi.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.DataAccess\\HumPsi.DataAccess.csproj"
               }
             }
           }
@@ -44,6 +47,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.42.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -115,6 +122,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.42.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -190,6 +201,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.42.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -271,6 +286,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.42.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.3, )"

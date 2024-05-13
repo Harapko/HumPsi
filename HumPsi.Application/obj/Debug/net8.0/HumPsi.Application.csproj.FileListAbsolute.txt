@@ -16,3 +16,10 @@ C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\obj\Debug\net8.0\r
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.pdb
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.genruntimeconfig.cache
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\obj\Debug\net8.0\ref\HumPsi.Application.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\HumPsi.DataAccess.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\Microsoft.Extensions.Features.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\HumPsi.DataAccess.pdb

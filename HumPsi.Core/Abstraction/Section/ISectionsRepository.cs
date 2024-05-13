@@ -9,7 +9,7 @@ public interface ISectionsRepository
 
     Task<List<Section>> Get();
     
-    Task<Guid> Update(Guid id, string title, List<Headlines> headlinesList);
+    Task<Guid> Update(Guid id, string title);
     
     Task<Guid> Delete(Guid id);
     

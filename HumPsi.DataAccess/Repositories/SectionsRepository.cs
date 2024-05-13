@@ -24,15 +24,12 @@ public class SectionsRepository : ISectionsRepository
 
         var sections = sectionEntity
             .Select(s => Section.Create(s.Id, s.TitleSection, new List<Headlines>()).sectionEntity)
+            .OrderBy(s=>s.TitleSection)
             .ToList();
 
         return sections;
     }
-
-    public Task<Guid> Update(Guid id, string title, List<Headlines> headlinesList)
-    {
-        throw new NotImplementedException();
-    }
+    
 
     public async Task<Guid> Create(Section section)
     {
@@ -49,16 +46,14 @@ public class SectionsRepository : ISectionsRepository
         return sectionEntity.Id;
     }
 
-    // public async Task<Guid> Update(Guid id, string title, List<HeadlinesEntity> headlinesList)
-    // {
-    //     await _context.Section
-    //         .Where(s => s.Id == id)
-    //         .ExecuteUpdateAsync(set => set
-    //             .SetProperty(s => s.TitleSection, s => title)
-    //             .SetProperty(s => s.Headlines, s => headlinesList));
-    //
-    //     return id;
-    // }
+    public async Task<Guid> Update(Guid id, string title)
+    {
+        await _context.Section
+            .Where(s => s.Id == id)
+            .ExecuteUpdateAsync(set => set
+                .SetProperty(s => s.TitleSection, s => title));
+        return id;
+    }
 
     public async Task<Guid> Delete(Guid id)
     {

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {SectionsModel} from "../../services/navMenu/section.service";
 
 @Component({
   selector: 'app-nav-menu-headlines',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './nav-menu-headlines.component.scss'
 })
 export class NavMenuHeadlinesComponent {
-
+  @Input() section! : SectionsModel;
 }
