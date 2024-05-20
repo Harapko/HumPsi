@@ -3,7 +3,9 @@ C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\H
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\HumPsi.Application.dll
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\HumPsi.Application.pdb
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\HumPsi.Core.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\HumPsi.DataAccess.dll
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\HumPsi.Core.pdb
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\HumPsi.DataAccess.pdb
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.csproj.AssemblyReference.cache
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.AssemblyInfoInputs.cache
@@ -16,5 +18,3 @@ C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\obj\Debug\net8.0\r
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.pdb
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.genruntimeconfig.cache
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\obj\Debug\net8.0\ref\HumPsi.Application.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\HumPsi.DataAccess.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Application\bin\Debug\net8.0\HumPsi.DataAccess.pdb

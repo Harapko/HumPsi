@@ -1,19 +1,11 @@
 {
   "Version": 1,
-  "Hash": "mH4OvDAEmXeRNg1MutJ2pIn3+8WA07okAMzfRQb1/jE=",
+  "Hash": "16boEUpWZjkrrjk0Wxk3Jnej94qqPJ+39GDDKeou8tw=",
   "Source": "HumPsi.Project",
   "BasePath": "_content/HumPsi.Project",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "HumPsi.Project\\wwwroot",
-      "Source": "HumPsi.Project",
-      "ContentRoot": "C:\\Users\\bakud\\RiderProjects\\HumPsiProject\\HumPsi.Project\\wwwroot\\",
-      "BasePath": "_content/HumPsi.Project",
-      "Pattern": "**"
-    }
-  ],
+  "DiscoveryPatterns": [],
   "Assets": []
 }

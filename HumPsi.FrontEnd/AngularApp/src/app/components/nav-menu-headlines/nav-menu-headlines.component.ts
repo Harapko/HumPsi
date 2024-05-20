@@ -1,7 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {Headlines, Section} from "../../../types";
 import {HeadlinesService} from "../../services/navMenu/headlines.service";
-import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-nav-menu-headlines',
@@ -12,9 +11,9 @@ import {Observable} from "rxjs";
 })
 export class NavMenuHeadlinesComponent {
   @Input() section! : Section;
-}
 
-export class HeadlinesComponent{
+
+
 
   constructor(private headlineService: HeadlinesService) {
   }
