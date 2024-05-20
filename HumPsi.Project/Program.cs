@@ -19,7 +19,7 @@ builder.Services.AddScoped<ISectionsRepository, SectionsRepository>();
 builder.Services.AddScoped<IHeadlineService, HeadlinesService>();
 builder.Services.AddScoped<IHeadlinesRepository, HeadlinesRepository>();
 
-builder.Services.AddScoped<IPhotoService, PhotoService>();
+builder.Services.AddScoped<IHeadlinesPhotoService, HeadlinesHeadlinesPhotoService>();
 
 
 builder.Services.AddCors(options =>

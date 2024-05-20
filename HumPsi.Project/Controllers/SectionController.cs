@@ -16,7 +16,7 @@ public class SectionController : ControllerBase
     }
 
     [HttpGet]
-    [Route("/home")]
+    [Route("/getSection")]
     public async Task<ActionResult<List<SectionResponse>>> GetSection(Guid id)
     {
         var section = await _sectionService.GetAllSection();

@@ -10,17 +10,17 @@ namespace HumPsiProject.Controllers;
 public class HeadlinesController : ControllerBase
 {
     private readonly IHeadlineService _headlineService;
-    private readonly IPhotoService _photoService;
+    private readonly IHeadlinesPhotoService _headlinesPhotoService;
     private readonly string _staticFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/photo/headlines");
 
-    public HeadlinesController(IHeadlineService headlineService, IPhotoService photoService)
+    public HeadlinesController(IHeadlineService headlineService, IHeadlinesPhotoService headlinesPhotoService)
     {
         _headlineService = headlineService;
-        _photoService = photoService;
+        _headlinesPhotoService = headlinesPhotoService;
     }
 
     [HttpGet]
-    [Route("/headlinesGet")]
+    [Route("/getAllHeadlines")]
     public async Task<ActionResult<List<HeadlinesResponseForNavMenu>>> GetAllHeadlines()
     {
         var headlines = await _headlineService.GetAllHeadlines();
@@ -34,13 +34,11 @@ public class HeadlinesController : ControllerBase
     [Route("/headlinesCreate")]
     public async Task<ActionResult<Guid>>  CreateHeadlines([FromBody] HeadlinesRequest request)
     {
-        var image = _photoService.CreatePhoto(Guid.NewGuid() ,request.filePath, _staticFilePath).Result.photoEntity;
+        var image = _headlinesPhotoService.CreatePhoto(Guid.NewGuid() ,request.filePath, _staticFilePath, request.HeadlinesId).Result.photoEntity;
         var (headlines, error) = Headlines.Create(
             Guid.NewGuid(),
             request.Title,
-            image,
-            request.SectionId,
-            new List<Articles>()
+            request.SectionId
         );
         
         if (!string.IsNullOrEmpty(error))

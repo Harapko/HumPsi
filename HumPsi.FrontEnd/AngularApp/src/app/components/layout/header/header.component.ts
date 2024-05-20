@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import {AsyncPipe, NgForOf} from "@angular/common";
-import {SectionService, SectionsModel} from "../../services/navMenu/section.service";
-import {NavMenuHeadlinesComponent} from "../nav-menu-headlines/nav-menu-headlines.component";
 import {Observable} from "rxjs";
+import {SectionService} from "../../../services/navMenu/section.service";
+import {Section} from "../../../../types";
+import {NavMenuHeadlinesComponent} from "../../nav-menu-headlines/nav-menu-headlines.component";
 
 @Component({
   selector: 'app-header',
@@ -15,13 +16,13 @@ import {Observable} from "rxjs";
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
-public sections$?: Observable<SectionsModel[]>
-
   constructor(private sectionService: SectionService) { }
 
+  sections: Section[] = [];
   ngOnInit(){
-    this.sections$ = this.sectionService.getSection();
+    this.sectionService.getSection("http://localhost:5198/getSection").subscribe((section: Section[])=> {
+      this.sections = section;
+    });
   }
 
 }

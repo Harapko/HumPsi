@@ -1,15 +1,12 @@
-using System.Runtime.InteropServices.JavaScript;
-using CSharpFunctionalExtensions;
 using HumPsi.Core.Models;
 using HumPsi.Data.MsSql.Abstraction.Photo;
-using HumPsi.DataAccess.Entites;
 using Microsoft.AspNetCore.Http;
 
 namespace HumPsi.Application;
 
-public class PhotoService : IPhotoService
+public class HeadlinesHeadlinesPhotoService : IHeadlinesPhotoService
 {
-    public async Task<(Photo photoEntity, string Error)> CreatePhoto(Guid id,IFormFile titleImage, string path)
+    public async Task<(HeadlinesPhoto photoEntity, string Error)> CreatePhoto(Guid id,IFormFile titleImage, string path, Guid headlinesId)
     {
         try
         {
@@ -21,7 +18,7 @@ public class PhotoService : IPhotoService
                 await titleImage.CopyToAsync(stream);
             }
 
-            var image = Photo.Create(id ,filePath);
+            var image = HeadlinesPhoto.Create(id ,filePath, headlinesId);
 
             return image;
         }

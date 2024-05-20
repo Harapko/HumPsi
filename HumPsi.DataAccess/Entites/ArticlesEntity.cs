@@ -23,9 +23,8 @@ public class ArticlesEntity
 
 
     public Guid HeadlinesId { get; set; }
-
     public HeadlinesEntity Headlines { get; set; }
     
-    [NotMapped]
-    public List<Photo>? Photos { get; set; } = [];
+    
+    public List<ArticlesPhotoEntity>? Photos { get; set; } = [];
 }

@@ -1,9 +1,7 @@
-using CSharpFunctionalExtensions;
 using HumPsi.Core.Models;
 using HumPsi.Data.MsSql.Abstraction.Headline;
 using HumPsi.Data.MsSql.Abstraction.Photo;
 using HumPsi.DataAccess.Entites;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace HumPsi.DataAccess.Repositories;
@@ -14,7 +12,7 @@ public class HeadlinesRepository : IHeadlinesRepository
     private readonly AppDbContext _context;
     
     
-    public HeadlinesRepository(AppDbContext context, IPhotoService photoService)
+    public HeadlinesRepository(AppDbContext context, IHeadlinesPhotoService headlinesPhotoService)
     {
         _context = context;
     }
@@ -29,7 +27,7 @@ public class HeadlinesRepository : IHeadlinesRepository
             .ToListAsync();
 
         var headlines = headlinesEntity
-            .Select(h => Headlines.Create(h.Id, h.Title, h.Photo, h.SectionId, new List<Articles>()).headlines)
+            .Select(h => Headlines.Create(h.Id, h.Title, h.SectionId).headlines)
             .ToList();
         
         return headlines;
@@ -45,7 +43,7 @@ public class HeadlinesRepository : IHeadlinesRepository
             .ToListAsync();
 
         var headlines = headlinesEntity
-            .Select(h => Headlines.Create(h.Id, h.Title, h.Photo, h.SectionId, new List<Articles>()).headlines)
+            .Select(h => Headlines.Create(h.Id, h.Title, h.SectionId).headlines)
             .Where(h=>h.SectionId==sectionId)
             .ToList();
         
@@ -58,9 +56,7 @@ public class HeadlinesRepository : IHeadlinesRepository
         {
             Id = headlines.Id,
             Title = headlines.Title,
-            Photo = headlines.Photo,
             SectionId = headlines.SectionId,
-            Articles = new List<ArticlesEntity>()
         };
         await _context.Headlines.AddAsync(headlineEntity);
         await _context.SaveChangesAsync();

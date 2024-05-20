@@ -10,11 +10,10 @@ public class Section
     {
         
     }
-    private Section(Guid  id, string titleSection, List<Headlines>? headlines)
+    private Section(Guid  id, string titleSection)
     {
         Id = id;
         TitleSection = titleSection;
-        Headlines = headlines;
     }
     
     public Guid Id { get;  }
@@ -23,8 +22,7 @@ public class Section
 
     public List<Headlines>? Headlines { get;  } = [];
 
-    public static (Section sectionEntity, string Error) Create(Guid id, string titleSection,
-        List<Headlines>? headlines)
+    public static (Section sectionEntity, string Error) Create(Guid id, string titleSection)
     {
         var error = string.Empty;
 
@@ -34,7 +32,7 @@ public class Section
         }
         
         
-        var section = new Section(id, titleSection, headlines);
+        var section = new Section(id, titleSection);
         return (section, error);
     }
     //..

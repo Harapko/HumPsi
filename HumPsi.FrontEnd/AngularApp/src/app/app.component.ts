@@ -2,10 +2,10 @@
 import {Component, } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {NavMenuHeadlinesComponent} from "./components/nav-menu-headlines/nav-menu-headlines.component";
-import {HeaderComponent} from "./components/header/header.component";
-import {FooterComponent} from "./components/footer/footer.component";
 import {HomePageComponent} from "./components/home-page/home-page.component";
 import {HttpClientModule} from "@angular/common/http";
+import {HeaderComponent} from "./components/layout/header/header.component";
+import {FooterComponent} from "./components/layout/footer/footer.component";
 
 @Component({
   selector: 'app-root',

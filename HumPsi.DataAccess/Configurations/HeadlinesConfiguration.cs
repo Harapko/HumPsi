@@ -22,6 +22,11 @@ public class HeadlinesConfiguration : IEntityTypeConfiguration<HeadlinesEntity>
             .HasOne(h => h.Section)
             .WithMany(s=>s.Headlines)
             .HasForeignKey(h=>h.SectionId);
+
+        builder
+            .HasMany(h => h.Photo)
+            .WithOne(hp => hp.Headline)
+            .HasForeignKey(hp => hp.HeadlinesId);
        
 
         builder.Property(h => h.Title)

@@ -12,8 +12,7 @@ public class HeadlinesEntity
     public Guid SectionId { get; set; }
     public SectionEntity Section { get; set; }
     
-    [NotMapped]
-    public Photo? Photo { get; set; }
+    public List<HeadlinesPhotoEntity?> Photo { get; set; }
     
     public List<ArticlesEntity>? Articles { get; set; } = [];
 }

@@ -34,8 +34,3 @@ C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.DataAccess\obj\Debug\net8.0\re
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.DataAccess\obj\Debug\net8.0\HumPsi.DataAccess.pdb
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.DataAccess\obj\Debug\net8.0\HumPsi.DataAccess.genruntimeconfig.cache
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.DataAccess\obj\Debug\net8.0\ref\HumPsi.DataAccess.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.DataAccess\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Features.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.DataAccess\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.DataAccess\bin\Debug\net8.0\System.IO.Pipelines.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.DataAccess\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.DataAccess\bin\Debug\net8.0\Microsoft.Extensions.Features.dll

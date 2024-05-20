@@ -1,23 +1,30 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {ApiService} from "../api.service";
+import {Observable} from "rxjs";
+import {Headlines} from "../../../types";
 
-export interface HeadlinesModel {
-  id: string,
-  title: string,
-  sectionId: string,
-  photoId: string,
-  articles: [any]
 
-}
 
 @Injectable({
   providedIn: 'root'
 })
 export class HeadlinesService {
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private apiService: ApiService) { }
 
-  createHeadline(){
+  getHeadlines = (url: string) : Observable<Headlines[]> => {
+    return this.apiService.get(url);
+  }
 
+  createHeadlines = (url: string, body: any): Observable<any> =>{
+    return this.apiService.post(url, body, {});
+  }
+
+  editHeadline = (url: string, body: any): Observable<any> => {
+    return this.apiService.put(url, body);
+  }
+
+  deleteHeadline = (url: string): Observable<any> => {
+    return this.apiService.delete(url);
   }
 }

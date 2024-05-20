@@ -9,13 +9,11 @@ public class Headlines
         
     }
     
-    private Headlines(Guid id, string title, Photo? photo, Guid sectionId, List<Articles>? articlesList)
+    private Headlines(Guid id, string title, Guid sectionId)
     {
         Id = id;
         Title = title;
-        Photo = photo;
         SectionId = sectionId;
-        Articles = articlesList;
     }
    
     
@@ -24,13 +22,12 @@ public class Headlines
     
     public Guid SectionId { get;  }
     public Section Section { get;  }
-    
-    public Photo? Photo { get; }
-    
-    public List<Articles>? Articles { get;  } = [];
 
-    public static (Headlines headlines, string Error) Create(Guid id, string title, Photo? photo,
-        Guid sectionId, List<Articles>? articlesList)
+    public List<HeadlinesPhoto?> Photo { get; }
+    
+    public List<Articles>? Articles { get;  } 
+
+    public static (Headlines headlines, string Error) Create(Guid id, string title, Guid sectionId)
     {
         var error = string.Empty;
 
@@ -44,7 +41,7 @@ public class Headlines
             error = "Headlines must have a section";
         }
         
-        var headlines = new Headlines(id, title, photo, sectionId, articlesList);
+        var headlines = new Headlines(id, title, sectionId);
 
         return (headlines, error);
     }

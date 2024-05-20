@@ -7,12 +7,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="AngularApp\src\app\components\" />
+      <Folder Include="AngularApp\src\app\components\layout\" />
       <Folder Include="AngularApp\src\app\models\" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="CSharpFunctionalExtensions" Version="2.42.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
     </ItemGroup>
 
 </Project>

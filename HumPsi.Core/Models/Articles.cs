@@ -12,7 +12,7 @@ public class Articles
     }
     
     private Articles(Guid id, string title, string? subTitle, List<string>? contentTitle,
-        List<string>? content, string? shortContentTitle, string? shortContent, Headlines headlines, Guid headlinesId , List<Photo>? photos)
+        List<string>? content, string? shortContentTitle, string? shortContent, Guid headlinesId)
     {
         Id = id;
         Title = title;
@@ -22,9 +22,6 @@ public class Articles
         ShortContentTitle = shortContentTitle;
         ShortContent = shortContent;
         HeadlinesId = headlinesId;
-        Headlines = headlines;
-        Photos = photos;
-
     }
     
     public Guid Id { get; }
@@ -47,12 +44,11 @@ public class Articles
     public Headlines Headlines { get;  }
     
     
-    public List<Photo>? Photos { get;  } = [];
+    public List<HeadlinesPhoto>? Photos { get;  } = [];
 
     public static (Articles articlesEntity, string Error) Create(Guid id, string title, string? subTitle,
         List<string>? contentTitle,
-        List<string>? content, string? shortContentTitle, string? shortContent,
-        Headlines headlines, Guid headlinesId, List<Photo>? photos)
+        List<string>? content, string? shortContentTitle, string? shortContent, Guid headlinesId)
     {
         var error = string.Empty;
 
@@ -62,7 +58,7 @@ public class Articles
         }
         
         
-        var article = new Articles(id, title, subTitle, contentTitle, content, shortContentTitle, shortContent, headlines, headlinesId, photos);
+        var article = new Articles(id, title, subTitle, contentTitle, content, shortContentTitle, shortContent, headlinesId);
 
         return (article, error);
     }

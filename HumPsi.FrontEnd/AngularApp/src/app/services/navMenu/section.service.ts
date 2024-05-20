@@ -1,22 +1,16 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http"
 import {Observable} from "rxjs"
-
-
-export interface SectionsModel {
-  id: string;
-  titleSection: string;
-  headlinesList: [string]
-}
+import {ApiService} from "../api.service";
+import {Section} from "../../../types";
 
 @Injectable({
   providedIn: 'root'
 })
 export class SectionService {
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private apiService: ApiService) { }
 
-  public getSection(): Observable<SectionsModel[]>{
-    return this.httpClient.get<SectionsModel[]>("http://localhost:5198/home")
+  getSection = (url: string): Observable<Section[]> =>{
+    return this.apiService.get(url);
   }
 }

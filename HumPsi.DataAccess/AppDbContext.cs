@@ -13,14 +13,14 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
     
     public DbSet<ArticlesEntity> Articles { get; set; }
     
-    public DbSet<PhotoEntity> Photo { get; set; }
+    public DbSet<HeadlinesPhotoEntity> Photo { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new SectionConfiguration());
         modelBuilder.ApplyConfiguration(new HeadlinesConfiguration());
         modelBuilder.ApplyConfiguration(new ArticlesConfiguration());
-        modelBuilder.ApplyConfiguration(new PhotoConfiguration());
+        modelBuilder.ApplyConfiguration(new HeadlinesPhotoConfiguration());
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<SectionEntity>().HasData(

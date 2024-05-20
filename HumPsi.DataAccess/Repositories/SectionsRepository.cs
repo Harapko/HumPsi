@@ -23,9 +23,10 @@ public class SectionsRepository : ISectionsRepository
             .ToListAsync();
 
         var sections = sectionEntity
-            .Select(s => Section.Create(s.Id, s.TitleSection, new List<Headlines>()).sectionEntity)
-            .OrderBy(s=>s.TitleSection)
+            .Select(s => Section.Create(s.Id, s.TitleSection).sectionEntity)
+            .OrderBy(s => s.TitleSection)
             .ToList();
+                
 
         return sections;
     }

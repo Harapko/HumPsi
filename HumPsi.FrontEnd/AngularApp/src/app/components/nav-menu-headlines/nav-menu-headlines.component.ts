@@ -1,5 +1,7 @@
 import {Component, Input} from '@angular/core';
-import {SectionsModel} from "../../services/navMenu/section.service";
+import {Headlines, Section} from "../../../types";
+import {HeadlinesService} from "../../services/navMenu/headlines.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-nav-menu-headlines',
@@ -9,5 +11,21 @@ import {SectionsModel} from "../../services/navMenu/section.service";
   styleUrl: './nav-menu-headlines.component.scss'
 })
 export class NavMenuHeadlinesComponent {
-  @Input() section! : SectionsModel;
+  @Input() section! : Section;
 }
+
+export class HeadlinesComponent{
+
+  constructor(private headlineService: HeadlinesService) {
+  }
+
+  headline: Headlines[] = [];
+  ngOnInit(){
+   this.headlineService.getHeadlines("http://localhost:5198/getAllHeadlines").subscribe((headline: Headlines[]) => {
+     this.headline = headline;
+   });
+  }
+}
+
+
+

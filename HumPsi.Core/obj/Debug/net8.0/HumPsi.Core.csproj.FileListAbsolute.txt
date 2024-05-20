@@ -28,9 +28,3 @@ C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Core\obj\Debug\net8.0\refint\H
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Core\obj\Debug\net8.0\HumPsi.Core.pdb
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Core\obj\Debug\net8.0\HumPsi.Core.genruntimeconfig.cache
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Core\obj\Debug\net8.0\ref\HumPsi.Core.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Core\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Features.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Core\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Core\bin\Debug\net8.0\System.IO.Pipelines.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Core\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Core\bin\Debug\net8.0\Microsoft.Extensions.Features.dll
-C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Core\obj\Debug\net8.0\HumPsi.Core.csproj.CopyComplete
