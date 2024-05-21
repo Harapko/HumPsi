@@ -3,7 +3,7 @@ import {AsyncPipe, NgForOf} from "@angular/common";
 import {Observable} from "rxjs";
 import {SectionService} from "../../../services/navMenu/section.service";
 import {Section} from "../../../../types";
-import {NavMenuHeadlinesComponent} from "../../nav-menu-headlines/nav-menu-headlines.component";
+import {NavMenuHeadlinesComponent} from "../../Headlines/nav-menu-headlines/nav-menu-headlines.component";
 
 @Component({
   selector: 'app-header',

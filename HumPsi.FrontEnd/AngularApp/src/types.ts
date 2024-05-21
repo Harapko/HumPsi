@@ -26,7 +26,7 @@ export interface Section{
 export interface Headlines{
   id: string,
   title: string,
-  sectionId: string,
+  sectionId: string | null,
   photo: string,
 
 }

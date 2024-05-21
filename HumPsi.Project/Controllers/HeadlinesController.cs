@@ -31,7 +31,7 @@ public class HeadlinesController : ControllerBase
     }
 
     [HttpPost]
-    [Route("/headlinesCreate")]
+    [Route("/createHeadlines")]
     public async Task<ActionResult<Guid>>  CreateHeadlines([FromBody] HeadlinesRequest request)
     {
         var image = _headlinesPhotoService.CreatePhoto(Guid.NewGuid() ,request.filePath, _staticFilePath, request.HeadlinesId).Result.photoEntity;
@@ -50,4 +50,6 @@ public class HeadlinesController : ControllerBase
         
         return Ok(headlineId);
     }
+    
+    
 }
