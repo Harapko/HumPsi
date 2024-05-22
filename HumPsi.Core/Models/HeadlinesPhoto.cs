@@ -28,11 +28,7 @@ public class HeadlinesPhoto
     public static (HeadlinesPhoto photoEntity, string Error) Create(Guid id,string filePath, Guid headlinesId)
     {
         var error = string.Empty;
-
-        // if (string.IsNullOrEmpty(filePath))
-        // {
-        //     error = "File can't have empty path";
-        // }
+        
         
         var photo = new HeadlinesPhoto(id, filePath, headlinesId);
         return (photo, error);

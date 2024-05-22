@@ -24,17 +24,28 @@ builder.Services.AddScoped<IHeadlinesPhotoService, HeadlinesHeadlinesPhotoServic
 
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policyBuilder =>
-    {
-        policyBuilder.WithOrigins(builder.Configuration.GetSection("AllowedOrigins").Get<string[]>());
+    options.AddDefaultPolicy(builder => {
+        builder.WithOrigins("http://localhost:4200");
+        builder.WithMethods("GET", "POST");
+        builder.AllowAnyHeader();
     });
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder => {
+        builder.AllowAnyOrigin();
+        builder.AllowAnyMethod();
+        builder.AllowAnyHeader();
+    });
+});
 
 var app = builder.Build();
 
+app.UseHttpsRedirection();
+app.UseAuthorization();
 app.MapControllers();
 app.UseRouting();
-app.UseCors();
 app.UseStaticFiles();
+app.UseCors();
 app.Run();

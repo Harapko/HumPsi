@@ -12,6 +12,8 @@ export class HeadlinesService {
 
   constructor(private apiService: ApiService) { }
 
+
+
   getHeadlines = (url: string) : Observable<Headlines[]> => {
     return this.apiService.get(url);
   }

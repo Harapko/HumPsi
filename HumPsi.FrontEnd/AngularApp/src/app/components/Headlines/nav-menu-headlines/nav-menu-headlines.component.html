@@ -3,7 +3,6 @@
     <div class="window__wrapper__colum">
       <div class="window__wrapper__colum__items">
         <a [routerLink]="['/create', section.id]" style="color: yellow" class="window__wrapper__colum__items__title">+ Add Headlines</a>
-        <button type="button" pButton icon="pi pi-check" (click)="toggleAddHeadline()" label="Add Headline"></button>
 
         <div class="window__wrapper__colum__items__rows">{{section.id}}</div>
 
@@ -12,22 +11,6 @@
   </div>
 </div>
 
-<app-edit-headlines
-  [headline]="selectedHeadline"
-  [dispaly]="displayEditHeadline"
-  (confirm)="onConfirmEdit($event)"
-  header="Edit Headline"
->
-</app-edit-headlines>
 
-<app-edit-headlines
-  [dispaly]="displayAddHeadline"
-  (confirm)="onConfirmAdd($event)"
-  header="Edit Headline"
->
-</app-edit-headlines>
-
-<button type="button" pButton icon="pi pi-check" (click)="onConfirm()" label="Confirm"></button>
-<button type="button" pButton icon="pi pi-times" (click)="onCancel()" label="Cancel"></button>
 
 

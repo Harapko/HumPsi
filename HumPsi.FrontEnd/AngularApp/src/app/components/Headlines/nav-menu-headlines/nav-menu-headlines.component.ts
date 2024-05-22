@@ -27,37 +27,6 @@ export class NavMenuHeadlinesComponent {
 
   headline: Headlines[] = [];
 
-  displayEditHeadline: boolean = false;
-  displayAddHeadline: boolean = false;
-
-  toggleEditHeadline(headline: Headlines){
-    this.selectedHeadline = headline;
-    this.displayEditHeadline = true;
-  }
-
-  toggleAddHeadline(){
-    this.displayAddHeadline = true;
-  }
-
-  selectedHeadline: Headlines = {
-    id: '',
-    title: '',
-    sectionId: '',
-    photo: '',
-}
-
-  onConfirmEdit(headline: Headlines){
-    if(this.selectedHeadline.id != null){
-      return
-    }
-    this.editHeadlines(headline, this.selectedHeadline.id);
-    this.displayEditHeadline = false;
-  }
-
-  onConfirmAdd(headline: Headlines){
-    this.createHeadlines(headline);
-    this.displayEditHeadline = false;
-  }
 
   getHeadlines(){
     this.headlineService.getHeadlines("http://localhost:5198/getAllHeadlines").subscribe({
@@ -70,17 +39,7 @@ export class NavMenuHeadlinesComponent {
     })
   }
 
-  editHeadlines(headlines: Headlines, id: string){
-    this.headlineService.editHeadline(`http://localhost:5198/editHeadlines/${id}`, headlines).subscribe({
-      next: (data) => {
-        console.log(data)
-        this.getHeadlines();
-      },
-      error: (error) =>{
-        console.log(error)
-      }
-    })
-  }
+
 
   deleteHeadlines(id: number){
     this.headlineService.deleteHeadline(`http://localhost:5198/deleteHeadlines/${id}`).subscribe({
@@ -94,17 +53,7 @@ export class NavMenuHeadlinesComponent {
     })
   }
 
-  createHeadlines(headlines: Headlines){
-    this.headlineService.createHeadlines(`http://localhost:5198/createHeadlines`, headlines).subscribe({
-      next: (data) => {
-        console.log(data)
-        this.getHeadlines();
-      },
-      error: (error) => {
-        console.log(error)
-      }
-    })
-  }
+
 
 
 

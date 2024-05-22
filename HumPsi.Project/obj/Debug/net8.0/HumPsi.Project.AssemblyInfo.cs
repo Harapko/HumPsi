@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HumPsi.Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b85b1cc23f6dfcd34ffa5436ac9c942f904a396")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ab261a2dd7bbec2833224e63fac57073da3fabd")]
 [assembly: System.Reflection.AssemblyProductAttribute("HumPsi.Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HumPsi.Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
