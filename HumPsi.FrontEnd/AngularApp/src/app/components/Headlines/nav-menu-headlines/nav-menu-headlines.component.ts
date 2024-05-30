@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {Headlines, Section} from "../../../../types";
 import {HeadlinesService} from "../../../services/navMenu/headlines.service";
-import {RouterLink} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 import {EditHeadlinesComponent} from "../edit-headlines/edit-headlines.component";
 import {ButtonModule} from "primeng/button";
 
@@ -22,11 +22,14 @@ export class NavMenuHeadlinesComponent {
 
 
 
-  constructor(private headlineService: HeadlinesService) {
+  constructor(private headlineService: HeadlinesService, private router: Router) {
   }
 
   headline: Headlines[] = [];
 
+  navigateToSecond() {
+    this.router.navigate(['/create', this.section.id]);
+  }
 
   getHeadlines(){
     this.headlineService.getHeadlines("http://localhost:5198/getAllHeadlines").subscribe({
@@ -39,8 +42,6 @@ export class NavMenuHeadlinesComponent {
     })
   }
 
-
-
   deleteHeadlines(id: number){
     this.headlineService.deleteHeadline(`http://localhost:5198/deleteHeadlines/${id}`).subscribe({
       next: (data) => {
@@ -52,9 +53,6 @@ export class NavMenuHeadlinesComponent {
       }
     })
   }
-
-
-
 
 
   ngOnInit(){

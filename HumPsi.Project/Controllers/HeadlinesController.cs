@@ -32,7 +32,7 @@ public class HeadlinesController : ControllerBase
 
     [HttpPost]
     [Route("/createHeadlines")]
-    public async Task<ActionResult<Guid>>  CreateHeadlines([FromBody] HeadlinesRequest request)
+    public async Task<ActionResult<Guid>>  CreateHeadlines([FromForm] HeadlinesRequest request)
     {
        
         var (headlines, error) = Headlines.Create(

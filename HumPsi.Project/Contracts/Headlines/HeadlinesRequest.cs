@@ -4,7 +4,7 @@ using HumPsi.DataAccess.Entites;
 namespace HumPsiProject.Contracts.Headlines;
 
 public record HeadlinesRequest(
-    string title,
-    Guid sectionId,
+    string? title,
+    Guid? sectionId,
     IFormFile? filePath
 );

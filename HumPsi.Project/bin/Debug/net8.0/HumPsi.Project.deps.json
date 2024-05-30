@@ -13,9 +13,11 @@
           "HumPsi.Core": "1.0.0",
           "HumPsi.DataAccess": "1.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
+          "Microsoft.AspNetCore.OpenApi": "8.0.4",
           "Microsoft.EntityFrameworkCore": "8.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
-          "Microsoft.EntityFrameworkCore.Tools": "8.0.3"
+          "Microsoft.EntityFrameworkCore.Tools": "8.0.3",
+          "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
           "HumPsi.Project.dll": {}
@@ -89,6 +91,17 @@
       "Microsoft.AspNetCore.Http.Features/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0"
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/8.0.4": {
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.14"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "8.0.4.0",
+            "fileVersion": "8.0.424.17014"
+          }
         }
       },
       "Microsoft.AspNetCore.WebUtilities/2.2.0": {
@@ -455,6 +468,7 @@
           "Microsoft.EntityFrameworkCore.Design": "8.0.3"
         }
       },
+      "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
       "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0"
@@ -614,6 +628,14 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.OpenApi/1.6.14": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "1.6.14.0",
+            "fileVersion": "1.6.14.0"
+          }
+        }
+      },
       "Microsoft.SqlServer.Server/1.0.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
@@ -646,6 +668,44 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.1.1"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore/6.6.2": {
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
+          "Swashbuckle.AspNetCore.Swagger": "6.6.2",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.6.2",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.6.2"
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/6.6.2": {
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.14"
+        },
+        "runtime": {
+          "lib/net8.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "assemblyVersion": "6.6.2.0",
+            "fileVersion": "6.6.2.401"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/6.6.2": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "6.6.2"
+        },
+        "runtime": {
+          "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "assemblyVersion": "6.6.2.0",
+            "fileVersion": "6.6.2.401"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/6.6.2": {
+        "runtime": {
+          "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "assemblyVersion": "6.6.2.0",
+            "fileVersion": "6.6.2.401"
           }
         }
       },
@@ -910,8 +970,10 @@
           "HumPsi.Core": "1.0.0",
           "HumPsi.DataAccess": "1.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
+          "Microsoft.AspNetCore.OpenApi": "8.0.4",
           "Microsoft.EntityFrameworkCore": "8.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
+          "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
           "HumPsi.Application.dll": {}
@@ -921,8 +983,10 @@
         "dependencies": {
           "CSharpFunctionalExtensions": "2.42.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
+          "Microsoft.AspNetCore.OpenApi": "8.0.4",
           "Microsoft.EntityFrameworkCore": "8.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
+          "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
           "HumPsi.Core.dll": {}
@@ -933,8 +997,10 @@
           "CSharpFunctionalExtensions": "2.42.0",
           "HumPsi.Core": "1.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
+          "Microsoft.AspNetCore.OpenApi": "8.0.4",
           "Microsoft.EntityFrameworkCore": "8.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
+          "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
           "HumPsi.DataAccess.dll": {}
@@ -996,6 +1062,13 @@
       "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
       "path": "microsoft.aspnetcore.http.features/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.OpenApi/8.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TFiXbP0tqRgJKcpiCSSp79q6QaiF8gqRhZgrU48FQajhVkiwHSp1O1b1hkYC4Ehl4clbk3pHwdfwN9mRtDAFbQ==",
+      "path": "microsoft.aspnetcore.openapi/8.0.4",
+      "hashPath": "microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.WebUtilities/2.2.0": {
       "type": "package",
@@ -1115,6 +1188,13 @@
       "sha512": "sha512-jKczLbj13jY6TvYsXgAYqfhkIow6VdqumCv0m8EvNr3vU1+nJ6LKoG+6pPKnkVOHycXHGy5DEhH0GN0ldmx7Kw==",
       "path": "microsoft.entityframeworkcore.tools/8.0.3",
       "hashPath": "microsoft.entityframeworkcore.tools.8.0.3.nupkg.sha512"
+    },
+    "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ckb5EDBUNJdFWyajfXzUIMRkhf52fHZOQuuZg/oiu8y7zDCVwD0iHhew6MnThjHmevanpxL3f5ci2TtHQEN6bw==",
+      "path": "microsoft.extensions.apidescription.server/6.0.5",
+      "hashPath": "microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
       "type": "package",
@@ -1270,6 +1350,13 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
+    "Microsoft.OpenApi/1.6.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tTaBT8qjk3xINfESyOPE2rIellPvB7qpVqiWiyA/lACVvz+xOGiXhFUfohcx82NLbi5avzLW0lx+s6oAqQijfw==",
+      "path": "microsoft.openapi/1.6.14",
+      "hashPath": "microsoft.openapi.1.6.14.nupkg.sha512"
+    },
     "Microsoft.SqlServer.Server/1.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1290,6 +1377,34 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore/6.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+NB4UYVYN6AhDSjW0IJAd1AGD8V33gemFNLPaxKTtPkHB+HaKAKf9MGAEUPivEWvqeQfcKIw8lJaHq6LHljRuw==",
+      "path": "swashbuckle.aspnetcore/6.6.2",
+      "hashPath": "swashbuckle.aspnetcore.6.6.2.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Swagger/6.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ovgPTSYX83UrQUWiS5vzDcJ8TEX1MAxBgDFMK45rC24MorHEPQlZAHlaXj/yth4Zf6xcktpUgTEBvffRQVwDKA==",
+      "path": "swashbuckle.aspnetcore.swagger/6.6.2",
+      "hashPath": "swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/6.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zv4ikn4AT1VYuOsDCpktLq4QDq08e7Utzbir86M5/ZkRaLXbCPF11E1/vTmOiDzRTl0zTZINQU2qLKwTcHgfrA==",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.6.2",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/6.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mBBb+/8Hm2Q3Wygag+hu2jj69tZW5psuv0vMRXY07Wy+Rrj40vRP8ZTbKBhs91r45/HXT4aY4z0iSBYx1h6JvA==",
+      "path": "swashbuckle.aspnetcore.swaggerui/6.6.2",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",
