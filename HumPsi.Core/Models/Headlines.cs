@@ -9,7 +9,7 @@ public class Headlines
         
     }
     
-    private Headlines(Guid id, string title, Guid sectionId)
+    private Headlines(Guid id, string title, Guid? sectionId)
     {
         Id = id;
         Title = title;
@@ -20,14 +20,14 @@ public class Headlines
     public Guid Id { get;  }
     public string Title { get;  } = string.Empty;
     
-    public Guid SectionId { get;  }
-    public Section Section { get;  }
+    public Guid? SectionId { get;  }
+    public Section? Section { get;  }
 
     public List<HeadlinesPhoto?> Photo { get; }
     
     public List<Articles>? Articles { get;  } 
 
-    public static (Headlines headlines, string Error) Create(Guid id, string title, Guid sectionId)
+    public static (Headlines headlines, string Error) Create(Guid id, string title, Guid? sectionId)
     {
         var error = string.Empty;
 

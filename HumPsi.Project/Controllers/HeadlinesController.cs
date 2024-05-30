@@ -31,16 +31,16 @@ public class HeadlinesController : ControllerBase
     }
 
     [HttpPost]
-    [Route("/headlinesCreate")]
-    public async Task<ActionResult<Guid>>  CreateHeadlines([FromBody] HeadlinesRequest request)
+    [Route("/createHeadlines")]
+    public async Task<ActionResult<Guid>>  CreateHeadlines([FromForm] HeadlinesRequest request)
     {
-        var image = _headlinesPhotoService.CreatePhoto(Guid.NewGuid() ,request.filePath, _staticFilePath, request.HeadlinesId).Result.photoEntity;
+       
         var (headlines, error) = Headlines.Create(
             Guid.NewGuid(),
-            request.Title,
-            request.SectionId
+            request.title,
+            request.sectionId
         );
-        
+        var image = _headlinesPhotoService.CreatePhoto(Guid.NewGuid() ,request.filePath, _staticFilePath, headlines.Id).Result.photoEntity;
         if (!string.IsNullOrEmpty(error))
         {
             return BadRequest(error);
@@ -50,4 +50,6 @@ public class HeadlinesController : ControllerBase
         
         return Ok(headlineId);
     }
+    
+    
 }

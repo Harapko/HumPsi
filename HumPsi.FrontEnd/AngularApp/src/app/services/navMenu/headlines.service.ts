@@ -12,12 +12,14 @@ export class HeadlinesService {
 
   constructor(private apiService: ApiService) { }
 
+
+
   getHeadlines = (url: string) : Observable<Headlines[]> => {
     return this.apiService.get(url);
   }
 
-  createHeadlines = (url: string, body: any): Observable<any> =>{
-    return this.apiService.post(url, body, {});
+  createHeadlines = (url: string, formData: FormData): Observable<any> =>{
+    return this.apiService.post(url, formData, {});
   }
 
   editHeadline = (url: string, body: any): Observable<any> => {

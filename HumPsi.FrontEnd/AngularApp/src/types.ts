@@ -24,10 +24,9 @@ export interface Section{
 }
 
 export interface Headlines{
-  id: string,
-  title: string,
-  sectionId: string,
-  photo: string,
+  title: string | null,
+  sectionId: string | null,
+  photo: File | null,
 
 }
 

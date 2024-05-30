@@ -137,3 +137,9 @@ C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\refin
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPsi.Project.pdb
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPsi.Project.genruntimeconfig.cache
 C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\ref\HumPsi.Project.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\bakud\RiderProjects\HumPsiProject\HumPsi.Project\obj\Debug\net8.0\HumPsi.Project.MvcApplicationPartsAssemblyInfo.cs

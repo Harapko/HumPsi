@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Folder Include="AngularApp\src\app\components\Headlines\" />
       <Folder Include="AngularApp\src\app\components\layout\" />
       <Folder Include="AngularApp\src\app\models\" />
     </ItemGroup>
@@ -14,6 +15,8 @@
     <ItemGroup>
       <PackageReference Include="CSharpFunctionalExtensions" Version="2.42.0" />
       <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
     </ItemGroup>
 
 </Project>

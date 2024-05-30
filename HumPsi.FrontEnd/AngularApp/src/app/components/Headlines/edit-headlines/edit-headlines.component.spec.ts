@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CreateHeadlinesComponent } from './create-headlines.component';
+import { EditHeadlinesComponent } from './edit-headlines.component';
 
-describe('CreateHeadlinesComponent', () => {
-  let component: CreateHeadlinesComponent;
-  let fixture: ComponentFixture<CreateHeadlinesComponent>;
+describe('EditHeadlinesComponent', () => {
+  let component: EditHeadlinesComponent;
+  let fixture: ComponentFixture<EditHeadlinesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CreateHeadlinesComponent]
+      imports: [EditHeadlinesComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CreateHeadlinesComponent);
+    fixture = TestBed.createComponent(EditHeadlinesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
