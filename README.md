@@ -1,4 +1,5 @@
-# A website for teaching people about medicine
+# Info:
+A website for teaching people about medicine
 on the site you can find many medical articles for learning, and at the end of the article you will find tests to test your knowledge
 ###### *the project is under development
 
